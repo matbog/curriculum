@@ -1,0 +1,180 @@
+  % Classe modercv
+% Article complet : http://blog.madrzejewski.com/creer-cv-elegant-latex-moderncv/
+
+\documentclass[11pt,a4paper]{moderncv}
+\usepackage[utf8]{inputenc}
+\usepackage[frenchb]{babel}
+\usepackage[official]{eurosym}
+\usepackage[top=1.1cm, bottom=1.1cm, left=2cm, right=2cm]{geometry}
+
+%-------------------------- Options package "moderncv"  ------------------------------%
+\moderncvtheme[blue]{classic} 
+% [blue,orange,green,red,purple,grey,black]{classic,casual,oldstyle,banking} 
+% Largeur de la colonne pour les dates
+\setlength{\hintscolumnwidth}{2.5cm}
+\firstname{Mateusz}
+\familyname{Bogdan}
+\title{Ph.D, Normalien}              
+\address{47, rue de la Beaune}{93100 Montreuil}    
+\email{mat.nadgobz@gmail.com}                      
+%\homepage{matbog.github.io}
+\mobile{+33 6 47 50 43 55} 
+\extrainfo{French \\ 36 years}
+\photo[80pt][0pt]{cv_pictureBW.eps} % [hauteur][epaisseur cadre]
+
+%-------------------------------------------------------------------------------------%
+\begin{document}
+\maketitle
+
+%-------------------------------------------------------------------------------------%
+\section{Education \newline}
+
+\cventry{2012 -- 2015}{Ph.D.}{LMT Cachan -- ENS Cachan}{France}{}{Morphological multiscale modeling of cementitious materials -- Numerical Homogenization of effective diffusive properties (J.-B. Colliat, F. Benboudjema, L. Stefan)}
+
+\cventry{2010 -- 2011}{Master's degree}{ENS Cachan -- Université Pierre et Marie Curie}{France}{}{Civil and Environmental Engineering obtained with honours -- Research oriented}
+
+\cventry{2006 -- 2009}{Bachelor's degree equivalent \& ``Agrégation''}{ENS Cachan -- Université Pierre et Marie Curie}{France}{}{Civil and environmental engineering, specialized in \og Materials, Structures and Organization\fg{} obtained with merit.}
+
+%-------------------------------------------------------------------------------------%
+\section{Work Experience \newline}
+
+\cventry{2016 -- \textit{Present}}{Reasearch Engineer and Project Manager}{AREP}{Paris, France}{
+Réalisation d'études aéraulique (CFD) :
+\begin{itemize}
+	\item Couplage thermo-aéraulique,
+    \item Confort au vent, indicateurs de confort objectifs,
+	\item Qualité d'air en espace confiné : développement d'un modèle dynamique de prédiction des concentrations de polluants,
+    \item Encadrement annuel de projets étudiants (ENS Paris-Saclay).
+\end{itemize}}
+
+\cventry{2012-2015}{Ph.D.}{LMT Cachan - ENS Cachan}{Cachan, France}{
+\begin{itemize}
+	\item CIFRE Grant with AREVA NC,
+    \item ..
+\end{itemize}}
+
+\cventry{2009 - 2014}{Lecturer}{ENS Cachan, ESTP, CNAM, USTH}{France \& Vietnam}{}{
+\begin{itemize}
+\item Acoustics, Heat Science, Material Strength, Reinforced concretes constructions, Cementitious materials.
+\item Internship tutoring (ENS Cachan) \og Experimental diffusivity studies in blended cementitious materials\fg{}.
+\item Master's Jury evaluating student internship in Civil Engineering (ENS Cachan).
+\end{itemize}}
+
+\cventry{2011}{Master's Internship}{LMT Cachan}{ France}{}{Morphological modeling of cement based materials -- Application to hydration modeling  (\textsl{J.-B. Colliat} et \textsl{F. Benboudjema})}{} %\newline{}}
+
+\cventry{2009 -- 2010}{Scientific Advisor}{Vietnam Green Building Council}{Hanoï}{Vietnam}{
+\begin{itemize}
+\item Evaluation and completion of the \textsc{Lotus} rating tool (Ecological, environmental and social targets).
+\item First pilot published for non-residential buildings: LOTUS NR.
+\end{itemize}}{} %\newline{}}
+
+\cventry{2008}{Bachelor's Internship}{University of California}{Berkeley}{U.S.A}{
+Numerical and experimental assessment of a seismic test slab natural frequencies, with prof. \textsl{B. Stojadinovic}}{}
+
+%-------------------------------------------------------------------------------------%
+%\section{Enseignements}
+%
+%%--------------------------------------%
+%\subsection{\newline Cours/TD/TP}
+%
+%\cventry{2011 -- 2014}{ENS Cachan}{Travaux dirigés et pratiques}{L3}{}{Acoustique, Thermique}
+%
+%\cventry{2011 -- 2013}{ESTP}{Cours, Travaux dirigés et pratiques}{1è année}{}{Matériaux du cimentaires, Construction en béton armé, Revêtements bitumineux}
+%
+%\cventry{2011 -- 2013}{CNAM}{Cours, Travaux dirigés}{1è année}{}{Les fonctions du bâtiment : acoustique, thermique et éclairage}
+%
+%\cventry{2009 -- 2010}{USTC}{Cours, Travaux dirigés}{1è année}{Hanoï,Vietnam}{Résistance des matériaux}
+
+%--------------------------------------%
+%\subsection{\newline Encadrement}
+%
+%\cventry{2012}{Supervision de stage -- L3}{LMT-Cachan}{Cachan}{}{\'Etude de la diffusion accélérée des chlorures  par champs électrique  dans les matériaux cimentaires (Z.I. Djamaï, A. Darquennes, F. Benboudjema)}
+%
+%\cventry{2012 -- 2014}{Jury de soutenance de stage M2 Génie Civil}{ENS Cachan}{}{}{}
+
+%-------------------------------------------------------------------------------------%
+\section{Language and Computer Skills \newline}
+
+\cvlanguage{English}{Professional -- Toeic 850 (2007)}{Year long experience in an English working environment, and Ph.D. presentation / dissertation done in English}
+
+\cvlanguage{Polish}{Bilingual}{}
+
+\cvlanguage{German}{Beginner}{}
+
+\cvitem{Programming}{ C/C++, Pearl, Bash, Fortran, HTML-CSS/PHP}
+
+\cvitem{Software}{Cat3m, Feap, Catia, Matlab/Scilab, Paraview, Microsoft Office, Open Office, Adobe, ...}
+
+\cvitem{Various}{First Aid Certificate (2005)}
+
+%-------------------------------------------------------------------------------------%
+\section{Publications	 \newline}
+
+%--------------------------------------%
+\subsection{Conference}
+
+\cventry {2011}{COMPLAS XI}{Barcelone}{Spain}{Multi-scale failure for heterogeneous materials: link with morphological modeling}{E. Roubin, \textsl{M. Bogdan}, J.-B. Colliat}
+
+%\cventry{2012}{Transfert 2012}{Lille}{}{Modélisation des transferts de masse dans les matériaux à matrice cimentaire à l’aide d’un modèle morphologique}{\textsl{M. Bogdan}, E. Roubin, J.-B. Colliat, F. Benboudjema, L. Stefan}
+
+\cventry{2012}{Microdurability 12}{Amsterdam}{The Netherlands}{Morphological modelling of cement based materials and hydration process}{\textsl{M. Bogdan}, E. Roubin, J.-B. Colliat, F. Benboudjema, L. Stefan}
+
+\cventry{2013}{AUGC'13}{ENS Cachan}{}{Modélisation des transferts diffusifs dans les matériaux cimentaires}{\textsl{M. Bogdan}, J.-B. Colliat, F. Benboudjema, L. Stefan}
+
+\cventry{2014}{AUGC'14}{Polytech Orléans}{}{Modèle d’hydratation \& Méthodes Level-Set}{\textsl{M. Bogdan}, J.-B. Colliat, F. Benboudjema, L. Stefan}
+
+\cventry{}{AUGC'14}{Polytech Orléans}{}{Morphologies et homogénéisation par la Lattice Boltzmann
+Method}{E. Walther,\textsl{M. Bogdan}, R. Bennacer, C. Desa}
+
+\cventry{}{Euro-C}{St. Antom am Arlberg}{Autriche}{Microscopic model for concrete diffusivity prediction}{\textsl{M. Bogdan}, J.-B. Colliat, F. Benboudjema, L. Stefan}
+
+%--------------------------------------%
+\subsection{\newline Articles}
+
+\cventry{2015}{Defect and Diffusion Forum}{Defect and Diffusion Forum}{Vol. 362}{Effective Permeability and Transfer Properties in Fractured Porous Media}{G. Rastiello, R. Bennacer, G. Nahas, \textsl{M. Bogdan}}
+
+\cventry{}{European Journal of Environmental and Civil Engineering}{Vol. 19}{}{Cement Paste Morphologies and effective diffusivity Using the Lattice Boltzmann Method}{E. Walther, \textsl{M. Bogdan}, C. Desa, R. Bennacer}
+
+\cventry{}{Water Ressources Resaerch}{Special issue: Applications of percolation theory to porous media}{\textbf{soumis}}{Continuous percolation on finite size domains: Use of the Excursion set theory}{E. Roubin, \textsl{M. Bogdan}, L. Stefan, J.-B. Colliat, F. Benboudjema}
+
+%-------------------------------------------------------------------------------------%
+\section{Associative activities \newline}
+
+\cventry{2013}{AUGC'13 conference}{ENS Cachan}{}{}{
+\begin{itemize}
+\item Web design (\textsc{hmtl-css})
+\item Organizing committee
+\end{itemize}}
+
+\cventry{2011 -- 2012}{\og Le Parasol\fg{} association's president}{LMT Cachan}{}{}{Maintaining and running the laboratory coffee room and recreational area (yearly budget 15k\euro)}
+
+\cventry{2006 -- 2007}{Student Union Office}{ENS Cachan}{}{In charge of the \og K-fet\fg (recreational area)}{(yearly budget 250k\euro)}
+
+\cventry{... -- 2002}{Scouts}{Lisses - Courcouronne, Sceaux}{France}{}{From early childhood, to guidance counsellor}
+
+
+%-------------------------------------------------------------------------------------%
+\section{Interests  \newline}
+\cvitem{Theatre}{European literature classics, young promising authors, following numerous directors}
+\cvitem{Sport}{Ice Hockey, Climbing, Golf, Cycling}
+
+\end{document}
+
+
+
+
+
+
+
+
+%% plein de choses différentes pour présenter vos compétences
+%\cvitemwithcomment{Compétence}{Niveau}{Commentaire}
+%\cvdoubleitem{Categorie 1}{XXX, YYY, ZZZ}{Categorie 2}{XXX, YYY, ZZZ}
+%\cvitem{Quelque chose}{Description}
+%% une liste
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem{Item 3}
+%% une double liste
+%\cvlistdoubleitem{Item 1}{Item 3}
+%\cvlistdoubleitem{Item 2}{Item 4}
