@@ -1,0 +1,167 @@
+% Classe modercv
+% Article complet : http://blog.madrzejewski.com/creer-cv-elegant-latex-moderncv/
+
+\documentclass[11pt,a4paper]{moderncv}
+\usepackage[utf8]{inputenc}
+\usepackage[frenchb]{babel}
+\usepackage[official]{eurosym}
+\usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+
+\usepackage{xcolor}
+\definecolor{airforceblue}{rgb}{0.19, 0.55, 0.91}
+
+%-------------------------- Options package "moderncv"  ------------------------------%
+\moderncvtheme[blue]{classic} % [blue,orange,green,red,purple,grey,black] {classic,casual,oldstyle,banking} 
+% Largeur de la colonne pour les dates
+\setlength{\hintscolumnwidth}{2.5cm}
+\firstname{Mateusz}
+\familyname{Bogdan}
+\title{Normalien, Docteur -- Génie Civil}              
+\address{47, rue de la Beaune}{93100 Montreuil}    
+\email{mat.nadgobz@gmail.com}
+\homepage{matbog.github.io}
+\mobile{+33 6 47 50 43 55} 
+\extrainfo{Nationalité française\\ 36 ans -- Célibataire}
+\photo[80pt][1pt]{cv_pictureBW.eps} % [hauteur][epaisseur cadre]
+
+%-------------------------------------------------------------------------------------%
+\begin{document}
+\maketitle
+
+
+%-------------------------------------------------------------------------------------%
+\section{Expériences professionnelles}
+
+\cventry{2009 - 2014}{Enseignant}{ENS Cachan, ESTP, CNAM, Vietnam}{}{}{
+Travaux dirigés, travaux pratiques et cours magistraux. 
+\begin{itemize}
+\item Thermique, Thermique du bâtiment, Acoustique, Résistance des matériaux, Construction en béton armé, Matériaux Cimentaires.
+\item Supervision de stage Licence 3 (ENS Cachan) \og \'Etude de la diffusion accélérée des chlorures  par champs électrique  dans les matériaux cimentaires \fg{}.
+\item Jury de soutenance de stage Master 2 Génie Civil (ENS Cachan).
+\end{itemize}}
+
+\cventry{mars - juin 2011}{Stage de Master 2}{LMT Cachan}{Cachan}{}{Modélisation morphologique de matériaux cimentaires et de leur hydratation}{} %\newline{}}
+
+\cventry{été 2010}{Interprète}{Safran - Hispano Suiza}{Colombe}{}{Franco-polonais, Interprète - Traducteur }{} %\newline{}}
+
+\cventry{2009 -- 2010}{Directeur Scientifique}{Vietnam Green Building Council}{Hanoï}{Vietnam}{
+\begin{itemize}
+	\item Supervision d'une équipe de trois personnes.
+	\item \'Evaluation et reprise du système de certification \textsc{Lotus} 
+	\begin{itemize}
+		\item Efficacité des systèmes énergétiques, de la gestion de l'eau et des ressources,
+		\item Protection de la santé des occupants,
+		\item Minimisation des déchets, de la pollution et des dégradations environnementales.
+	\end{itemize}
+	\item Publication de la version pilote du système de certification pour les bâtiments non résidentiels : LOTUS NR.
+\end{itemize}}{} %\newline{}}
+
+\cventry{avril - juin 2008}{Stage de Master 1}{University of California}{Berkeley}{\'Etats Unis}{
+Determination numérique et expérimentale des fréquences propres d'une dalle d'essai sismique}{}
+
+\cventry{été 2007}{Stage en entreprise}{Eiffage - BG 21 Ingénieurs Conseils }{Paris}{}{Réalisation d'études de sécurités vis-à-vis des risques d'explosions de gaz sur une station d'épuration} %\newline{}}
+
+%---------------------------------------------------------------------%
+\section{Formation}
+
+\cventry{2012 -- 2015}{Doctorat}{LMT Cachan -- ENS Cachan}{}{}{Modélisation morphologique multi-échelles de matériaux cimentaires -- Prédiction de propriétés de diffusion effectives 
+\begin{itemize}
+	\item Développement d'un modèle d'hydratation des pâtes de ciment.
+	\item Adaptation d'un modèle morphologique aux différentes échelles rencontrées dans les matériaux cimentaires.
+	\item Campagnes de simulations numériques des transferts de masse dans les matériaux poreux, homogénéisation multi-échelles de propriétés effectives.
+\end{itemize}
+}
+
+\cventry{2010 -- 2011}{Master 2 Recherche}{ENS Cachan}{}{}{ \og Génie Civil et Environnement -- Sciences de l'ingénieur \fg -- \textit{mention Bien}}
+
+\cventry{2008 -- 2009}{Agrégation de Génie Civil}{Admissible}{}{}{option \og Matériaux, Ouvrages et Aménagement \fg}
+
+\cventry{2006 -- 2008}{Licence 3 - Master 1}{ENS Cachan}{}{}{Spécialité Génie Civil}
+
+
+
+\section{Compétences}
+
+\cvlanguage{Anglais}{Professionnel -- Toeic 850 (2007)}{Expérience professionnelle internationale d'un an (2010) et environnement international durant les trois ans de thèse}
+
+\cvlanguage{Polonais}{Langue maternelle}{}
+
+%\cvlanguage{Allemand}{Débutant}{}
+
+\cvitem{Langages}{ C/C++, Pearl, Bash, Fortran, HTML-CSS/PHP}
+
+\cvitem{Logiciels}{Cat3m, Feap, Catia, Matlab/Scilab, Paraview, Microsoft Office, Open Office, Suite Adobe, ...}
+
+\cvitem{Secourisme}{Formation Premiers Secours (2005)}
+
+%-------------------------------------------------------------------------------------%
+\section{Communications scientifiques}
+
+%--------------------------------------%
+\subsection{Articles}
+
+\cventry{2015}{Defect and Diffusion Forum}{Defect and Diffusion Forum}{Vol. 362}{Effective Permeability and Transfer Properties in Fractured Porous Media}{G. Rastiello, R. Bennacer, G. Nahas, \textsl{M. Bogdan}}
+
+\cventry{}{European Journal of Environmental and Civil Engineering}{Vol. 19}{}{Cement Paste Morphologies and effective diffusivity Using the Lattice Boltzmann Method}{E. Walther, \textsl{M. Bogdan}, C. Desa, R. Bennacer}
+
+\cventry{}{Water Ressources Research}{Special issue: Applications of percolation theory to porous media}{\textbf{soumis}}{Continuous percolation on finite size domains: Use of the Excursion set theory}{E. Roubin, \textsl{M. Bogdan}, L. Stefan, J.-B. Colliat, F. Benboudjema}
+%--------------------------------------%
+\subsection{Conférences}
+
+\cventry {2011}{COMPLAS XI}{Barcelone}{Espagne}{Multi-scale failure for heterogeneous materials: link with morphological modeling}{E. Roubin, \textsl{M. Bogdan}, J.-B. Colliat}
+
+\cventry{2012}{Transfert 2012}{Lille}{}{Modélisation des transferts de masse dans les matériaux à matrice cimentaire à l’aide d’un modèle morphologique}{\textsl{M. Bogdan}, E. Roubin, J.-B. Colliat, F. Benboudjema, L. Stefan}
+
+\cventry{}{Microdurability 12}{Amsterdam}{Pays Bas}{Morphological modelling of cement based materials and hydration process}{\textsl{M. Bogdan}, E. Roubin, J.-B. Colliat, F. Benboudjema, L. Stefan}
+
+\cventry{2013}{AUGC'13}{ENS Cachan}{}{Modélisation des transferts diffusifs dans les matériaux cimentaires}{\textsl{M. Bogdan}, J.-B. Colliat, F. Benboudjema, L. Stefan}
+
+\cventry{2014}{AUGC'14}{Polytech Orléans}{}{Modèle d’hydratation \& Méthodes Level-Set}{\textsl{M. Bogdan}, J.-B. Colliat, F. Benboudjema, L. Stefan}
+
+\cventry{}{AUGC'14}{Polytech Orléans}{}{Morphologies et homogénéisation par la Lattice Boltzmann
+Method}{E. Walther,\textsl{M. Bogdan}, R. Bennacer, C. Desa}
+
+\cventry{}{Euro-C}{St. Anton am Arlberg}{Autriche}{Microscopic model for concrete diffusivity prediction}{\textsl{M. Bogdan}, J.-B. Colliat, F. Benboudjema, L. Stefan}
+
+%-----------------------------------------------------------%
+\section{Activités associatives}
+
+\cventry{2013}{AUGC'13}{ENS Cachan}{}{}{
+\begin{itemize}
+\item Création du site web (\textsc{hmtl-css}),
+\item Membre de l'équipe organisatrice des rencontres de l'Association Universitaire de Génie Civil.
+\end{itemize}}
+
+\cventry{2011 -- 2012}{Président de l'association \og Le Parasol\fg{}}{LMT Cachan}{}{}{En charge de l'approvisionnement de la cafétéria (budget annuel de 15k\euro)}
+
+\cventry{2006 -- 2007}{Membre du bureau du BDE}{ENS Cachan}{Responsable \og K-fet\fg}{}{Co-gestionnaire général de la maison des étudiants (budget annuel estimé à 250k\euro)}
+
+\cventry{... -- 2002}{Scoutisme}{Lisses - Courcouronne, Sceaux}{}{}{Du plus jeune âge jusqu'à l'encadrement.}
+
+
+%-------------------------------------------------------------------------------------%
+\section{Centres d'intérêt}
+\cvitem{Architecture}{Intérêt particulier pour l'architecture moderne et contemporaine.}
+\cvitem{Théâtre}{Classiques de la littérature européenne, jeunes auteurs internationaux, suivi de metteurs en scène reconnus ou prometteurs}
+\cvitem{Sport}{Hockey sur glace, escalade, golf, cyclisme}
+
+\end{document}
+
+
+
+
+
+
+
+
+%% plein de choses différentes pour présenter vos compétences
+%\cvitemwithcomment{Compétence}{Niveau}{Commentaire}
+%\cvdoubleitem{Categorie 1}{XXX, YYY, ZZZ}{Categorie 2}{XXX, YYY, ZZZ}
+%\cvitem{Quelque chose}{Description}
+%% une liste
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem{Item 3}
+%% une double liste
+%\cvlistdoubleitem{Item 1}{Item 3}
+%\cvlistdoubleitem{Item 2}{Item 4}
