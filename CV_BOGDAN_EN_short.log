@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.27)  27 OCT 2021 15:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.27)  27 OCT 2021 15:20
 entering extended mode
 **./CV_BOGDAN_EN_short.tex
 (CV_BOGDAN_EN_short.tex
@@ -791,7 +791,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmr on input line 33
 (C:\Users\bogdanm\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-No file CV_BOGDAN_EN_short.aux.
+(CV_BOGDAN_EN_short.aux)
 \openout1 = `CV_BOGDAN_EN_short.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
@@ -904,9 +904,11 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 33.
 LaTeX Info: Redefining \pageref on input line 33.
 LaTeX Info: Redefining \nameref on input line 33.
+ (CV_BOGDAN_EN_short.out) (CV_BOGDAN_EN_short.out)
 \@outlinefile=\write4
 \openout4 = `CV_BOGDAN_EN_short.out'.
 
+\pagenumberwidth=\skip98
 \makecvheaddetailsbox=\box68
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
 5.
@@ -957,14 +959,14 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./cv_pictureBW-eps-converted-to.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<cv_pictureBW-eps-converted-to.pdf, id=8, 240.9pt x 240.9pt>
+<cv_pictureBW-eps-converted-to.pdf, id=37, 240.9pt x 240.9pt>
 File: cv_pictureBW-eps-converted-to.pdf Graphic file (type pdf)
 <use cv_pictureBW-eps-converted-to.pdf>
 Package pdftex.def Info: cv_pictureBW-eps-converted-to.pdf  used on input line 
 35.
 (pdftex.def)             Requested size: 80.0pt x 79.99715pt.
-\makecvheaddetailswidth=\skip98
-\makecvheadpicturewidth=\skip99
+\makecvheaddetailswidth=\skip99
+\makecvheadpicturewidth=\skip100
 \makecvheadnamebox=\box70
 
 Underfull \hbox (badness 10000) in paragraph at lines 35--35
@@ -981,23 +983,14 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 {C:/Users/bogdanm/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./cv_pictureB
 W-eps-converted-to.pdf>] [2] (CV_BOGDAN_EN_short.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `CV_BOGDAN_EN_short.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `CV_BOGDAN_EN_short.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  42AC3BE502E20B4125F733FC49D001EA;742.
+Package rerunfilecheck Info: File `CV_BOGDAN_EN_short.out' has not changed.
+(rerunfilecheck)             Checksum: 42AC3BE502E20B4125F733FC49D001EA;742.
  ) 
 Here is how much of TeX's memory you used:
- 22315 strings out of 478907
- 414390 string characters out of 2850943
- 766937 words of memory out of 3000000
- 39612 multiletter control sequences out of 15000+600000
+ 22329 strings out of 478907
+ 414722 string characters out of 2850943
+ 767154 words of memory out of 3000000
+ 39620 multiletter control sequences out of 15000+600000
  479928 words of font info for 137 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  114i,12n,111p,551b,468s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1013,9 +1006,9 @@ lm/lmr17.pfb><C:/Users/bogdanm/AppData/Local/Programs/MiKTeX/fonts/type1/public
 ic/lm/lmro10.pfb><C:/Users/bogdanm/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/lm/lmro17.pfb><C:/Users/bogdanm/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/marvosym/marvosym.pfb>
-Output written on CV_BOGDAN_EN_short.pdf (2 pages, 333962 bytes).
+Output written on CV_BOGDAN_EN_short.pdf (2 pages, 337103 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
+ 133 PDF objects out of 1000 (max. 8388607)
  10 named destinations out of 1000 (max. 500000)
- 40978 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 41034 words of extra memory for PDF output out of 42996 (max. 10000000)
 
