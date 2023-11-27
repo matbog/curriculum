@@ -1,0 +1,5 @@
+# Ignorer tous les fichiers .log
+*.log
+*.aux
+*.out
+*.synctex.gz
