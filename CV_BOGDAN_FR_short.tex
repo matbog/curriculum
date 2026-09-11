@@ -1,0 +1,128 @@
+%------------------------------------------------------------%
+% Classe modercv
+% Reference : http://blog.madrzejewski.com/creer-cv-elegant-latex-moderncv/
+%------------------------------------------------------------%
+\documentclass[11pt,a4paper]{moderncv}
+\usepackage[utf8]{inputenc}
+\usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+% Additional packages
+% Euro symbol
+\usepackage[official]{eurosym}
+% Use more colors
+\usepackage{xcolor}
+\definecolor{my_pink}{HTML}{B5125C}
+\definecolor{my_pink2}{rgb}{0, 1.0, 0}
+
+%-------------- Options package "moderncv"  -----------------%
+\moderncvtheme[pink]{classic}
+\setlength{\hintscolumnwidth}{2.1cm}
+\colorlet{color1}{my_pink2}
+
+%------------------------------------------------------------%
+% Informations
+\firstname{Mateusz}
+\familyname{Bogdan}
+\title{Docteur, Normalien}
+\address{98, boulevard Henri Barbusse}{93100 Montreuil, FRANCE}
+\email{mat.bogdan@pm.me}
+\homepage{matbog.github.io}
+\social[linkedin][www.linkedin.com/in/bogdanmateusz/]{bogdanmateusz}
+
+\mobile{+33 6 47 50 43 55}
+\extrainfo{Français \\ 41 ans}
+\photo[80pt][1pt]{ID_BOGDAN.pdf}
+
+%------------------------------------------------------------%
+\begin{document}
+\maketitle
+
+%------------------------------------------------------------%
+\section{Expérience professionnelle}
+
+\cventry{\textit{Depuis} 2016}{Ingénieur de Recherche, Chef de Projet, Responsable d'Équipe}{\href{lhypercube.arep.fr}{AREP - L'hypercube}}{Paris, France}{Responsable d'une équipe dédiée au microclimat urbain, au confort thermique et à la qualité de l'air}{}{}
+
+\cventry{\textit{Depuis} 2018}{Chargé d'enseignement}{ENS Paris Saclay, ENSAM Paris, INSA Strasbourg}{France}{}{Études climatiques à l'échelle urbaine, Analyse du Cycle de Vie, Outils numériques pour l'analyse énergétique (Python)}
+
+\cventry{2012 -- 2015}{Doctorat}{LMT Cachan - ENS Cachan - AREVA NC}{Cachan, France}{Modélisation morphologique multi-échelle des matériaux cimentaires -- Homogénéisation numérique des propriétés diffusives effectives}{Sous la direction de L. Stefan et des Profs. J.-B. Colliat et F. Benboudjema}{}
+
+\cventry{2009 -- 2014}{Chargé d'enseignement et tutorat}{ENS Cachan, ESTP, CNAM, universités USTH}{France \& Vietnam}{}{Acoustique appliquée, Matériaux cimentaires, Résistance des matériaux, Encadrement de stages de Master}
+
+\cventry{2011}{Stage de Master}{LMT Cachan}{France}{Modélisation morphologique des matériaux à base de ciment -- Application à la modélisation de l'hydratation}{Sous la direction du Prof. J.-B. Colliat}
+
+\cventry{2010}{Interprète - Traducteur}{SAFRAN - Hispano-Suiza}{Colombes, France}{Traductions techniques français-polonais (atelier d'usinage mécanique CFM-56)}{}{}{}
+
+\cventry{2009 -- 2010}{Conseiller Scientifique}{Vietnam Green Building Council}{Hanoï, Vietnam}{}{}{}
+
+\cventry{2008}{Stage de Licence}{University of California - EERC}{Berkeley, États-Unis}{Évaluation numérique et expérimentale des fréquences naturelles d'une dalle d'essai sismique}{Sous la direction du Prof. B. Stojadinovi\'c}
+
+%------------------------------------------------------------%
+\section{Formation}
+
+\cventry{2012 -- 2015}{Doctorat}{LMT Cachan -- ENS Cachan}{France}{\textcolor{my_pink}{\href{https://theses.fr/2015DENS0021}{Modélisation morphologique multi-échelle des matériaux cimentaires -- Homogénéisation numérique des propriétés diffusives effectives}}}{Sous la direction des Profs. J.-B. Colliat et F. Benboudjema}
+
+\cventry{2010 -- 2011}{Master Recherche}{ENS Cachan}{France}{Génie Civil et Environnemental -- Orientation Recherche}{Spécialité \textsl{Matériaux, Modélisation des Structures et Calcul}}
+
+\cventry{2006 -- 2008}{Licence \& Agrégation}{ENS Cachan}{France}{Génie Civil et Environnemental}{Spécialité \textsl{Matériaux, Modélisation des Structures et Calcul}}
+
+%------------------------------------------------------------%
+\section{Publications sélectionnées}
+
+%--------------------------------------%
+\subsection{Articles sélectionnés}
+
+\cventry{2025}{Indoor Environments}{Vol. 2}{}{\textcolor{my_pink}{\href{https://doi.org/10.1016/j.indenv.2025.100144}{Comparison of two methods for evaluating the performance of particle filtration systems in underground railway stations}}}{V. Rakotonirinjanahary, S. Crumeyrolle, \textsl{M. Bogdan}, B. Hanoune}
+
+\cventry{2025}{Environments}{Vol. 12}{}{\textcolor{my_pink}{\href{https://doi.org/10.3390/environments12120485}{Rapid 1D Design Method for Energy-Efficient Air Filtration Systems in Railway Stations}}}{P.-E. Prétot, C. Schulz, D. Chalet, J. Migaud, \textsl{M. Bogdan}}
+
+\cventry{2024}{Indoor Environments}{Vol. 1}{}{\textcolor{my_pink}{\href{https://doi.org/10.1016/j.indenv.2024.100040}{A novel method for establishing typical daily profile of PM concentrations in underground railway stations}}}{V. Rakotonirinjanahary, S. Crumeyrolle, \textsl{M. Bogdan}, B. Hanoune}
+
+\cventry{2020}{Techniques de l'Ingénieur}{C-8131}{}{\textcolor{my_pink}{\href{https://www.techniques-ingenieur.fr/base-documentaire/construction-et-travaux-publics-th3/le-chauffage-la-climatisation-et-l-eau-chaude-sanitaire-42582210/calcul-des-pressions-en-facade-pour-la-ventilation-naturelle-dans-les-espaces-semi-ouverts-c8131/}{Calcul des pressions en façade pour la ventilation naturelle dans les espaces semi-ouverts}}}{E. Walther, A. Hubert, A. Sauvageon, \textsl{M. Bogdan}}
+
+\cventry{2017}{Science of The Total Environment}{Vol. 607-608}{}{\textcolor{my_pink}{\href{https://doi.org/10.1016/j.scitotenv.2017.07.090}{Modelling of airborne particulate matter concentration in underground stations using a two size-class conservation model}}}{E. Walther, \textsl{M. Bogdan}}
+
+\cventry{2017}{Transportation Research Part D}{Vol. 56}{}{\textcolor{my_pink}{\href{https://doi.org/10.1016/j.trd.2017.07.014}{A novel approach for the modelling of air quality dynamics in underground railway stations}}}{E. Walther, \textsl{M. Bogdan}}
+
+\cventry{2015}{European Journal of Environmental and Civil Engineering}{Vol. 19}{}{\textcolor{my_pink}{\href{http://dx.doi.org/10.1080/19648189.2015.1047899}{Cement Paste Morphologies and effective diffusivity Using the Lattice Boltzmann Method}}}{E. Walther, \textsl{M. Bogdan}, C. Desa, R. Bennacer}
+
+%--------------------------------------%
+\subsection{Conférences récentes}
+
+\cventry{2025}{ICUC12}{Rotterdam, Pays-Bas}{\textcolor{my_pink}{\href{https://hal.science/hal-05172092/file/presentation_abricocoda_icuc12_TGresse.pdf}{Approach to Urban Heat Mitigation Through Bio ANalogous Climate Shelters}}}{T. Gresse, D. David, F. Lefevre, M. Galtier, \textsl{M. Bogdan}, M. Salles, M. Picazo Guerrero, Y. Sun, E. Morlé, K. Lapray}{}
+
+\cventry{2024}{IBPSA France}{La Rochelle - Oléron, France}{\textcolor{my_pink}{\href{https://www.researchgate.net/publication/380576618_La_distribution_de_Weibull_un_outil_utile_ou_depasse_Application_au_confort_au_vent}{La distribution de Weibull, un outil utile ou dépassé ? Application au confort au vent}}}{\textsl{M. Bogdan}, E. Walther, A. Hubert}{}
+
+\cventry{2024}{Indoor Air}{Honolulu - Hawaï, États-Unis}{\textcolor{my_pink}{\href{https://www.researchgate.net/publication/382463547_A_novel_method_for_establishing_typical_profile_of_PM_concentrations_in_underground_railway_stations}{A novel method for establishing typical profile of PM concentrations in underground railway stations}}}{Rakotonirinjanahary, S. Crumeyrolle, \textsl{M. Bogdan}, B. Hanoune}{}
+
+\cventry{2022}{IBPSA France}{Châlons-en-Champagne, France}{\textcolor{my_pink}{\href{https://www.researchgate.net/publication/360835982_Calcul_des_facteurs_de_forme_entre_polygones_-Application_a_la_thermique_urbaine_et_aux_etudes_de_confort}{Calcul des facteurs de forme entre polygones - Application à la thermique urbaine et aux études de confort}}}{\textsl{M. Bogdan}, E. Walther, M. Alecian, M. Chapon}{}
+
+\cventry{2021}{17\textsuperscript{e} conférence internationale IBPSA}{Bruges, Belgique}{\textcolor{my_pink}{\href{https://www.researchgate.net/publication/354362982_Spatial_distribution_of_thermal_comfort_A_case_study_in_Paris'_station}{Spatial distribution of thermal comfort: A case study in Paris' station}}}{E. Walther, \textsl{M. Bogdan}, F. Davys-Peyren C. Inard}{}
+
+\cventry{2019}{16\textsuperscript{e} conférence internationale IBPSA}{Rome, Italie}{Improving the prediction of natural ventilation by coupling CFD and BES: A case study in Strasbourg train station}{E. Walther, A. Hubert, A. Sauvageon, \textsl{M. Bogdan}}{}
+
+%------------------------------------------------------------%
+\section{Compétences}
+
+\cvlanguage{Langues}{Français \& Polonais : langues maternelles, Anglais : courant}{}
+
+\cvitem{Programmation}{Python, Bash, Web (HTML-CSS, PHP, Javascript), C/C++, Fortran}{}
+
+\cvitem{Logiciels}{OpenFOAM, ParaView, EnergyPlus, Radiance, Matlab/Scilab, Blender, QGIS, environnements Linux}{}
+
+\cvitem{Édition}{Microsoft/Open Office, Adobe Illustrator/Photoshop, Gimp, \LaTeX, Web (Wordpress, HUGO)}{}
+
+%------------------------------------------------------------%
+\section{Divers}
+
+\cventry{2006 -- 2007}{Bureau des Élèves}{ENS Cachan}{}{}{Co-gérant de la « K-fet » (espace récréatif -- budget annuel 250k\euro)}
+
+\cventry{2011 -- 2012}{Association « Le Parasol »}{LMT Cachan}{}{}{Co-gérant de la cafétéria et de l'espace récréatif du laboratoire (budget annuel 15k\euro)}
+
+\cventry{2013}{Conférence AUGC'13}{ENS Cachan}{}{}{Comité d'organisation, contribution au développement du site web}
+
+\cvitem{Sport}{Hockey sur roulettes, Cyclisme}
+
+%------------------------------------------------------------%
+\end{document}
+%----------------------- E.O.F ------------------------------%
