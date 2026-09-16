@@ -1,50 +1,82 @@
-%------------------------------------------------------------%
-% Classe modercv
-% Reference : http://blog.madrzejewski.com/creer-cv-elegant-latex-moderncv/
-%------------------------------------------------------------%
 \documentclass[11pt,a4paper]{moderncv}
-\usepackage[utf8]{inputenc}
 \usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
-\usepackage[T1]{fontenc}
 \usepackage{lmodern}
-% Additional packages
-% Euro symbol
 \usepackage[official]{eurosym}
-% Use more colors
 \usepackage{xcolor}
 \definecolor{my_pink}{HTML}{C4246A}
-
-\PassOptionsToPackage{colorlinks=true, urlcolor=my_pink, linkcolor=my_pink, citecolor=my_pink, breaklinks=true, pdfusetitle, unicode=true}{hyperref}
+\setlength{\fboxsep}{1pt}
+\PassOptionsToPackage{colorlinks=true, urlcolor=my_pink, linkcolor=my_pink, citecolor=my_pink, breaklinks=true, unicode=true}{hyperref}
 
 \moderncvtheme[pink]{classic}
+%------------------------------------------------------------%
+% custom 
 \setlength{\hintscolumnwidth}{2.1cm}
+\usepackage{tikz}
+
+\renewcommand*{\section}[2][\faIcon{circle}]{%
+  \vspace{1.5ex}%
+  \par\noindent%
+  \begin{minipage}[t]{\hintscolumnwidth}%
+    \begin{tikzpicture}[baseline=-0.2ex]%
+      \node[inner sep=0pt, text=color1, font=\scriptsize] at (0, 0.12) {#1};%
+          \foreach \i/\o in {0.32/1.0, 0.62/0.75, 0.92/0.5, 1.22/0.3, 1.52/0.15, 1.82/0.07}{%
+          \fill[color1, opacity=\o] (\i, 0) rectangle ++(0.24,0.24);%
+        }%
+    \end{tikzpicture}%
+  \end{minipage}%
+  \hspace{\separatorcolumnwidth}%
+  \begin{minipage}[t]{\maincolumnwidth}%
+    {\sectionstyle{#2}}%
+  \end{minipage}%
+  \par\vspace{0.5ex}%
+}
+
+\renewcommand*{\subsection}[2][\faIcon{chevron-right}]{%
+  \vspace{0.8ex}%
+  \par\noindent%
+  \makebox[\hintscolumnwidth][r]{%
+    \begin{tikzpicture}[baseline=-0.0ex]%
+      \useasboundingbox (0,0) rectangle (2.19cm, 0.26cm);%
+    \node[inner sep=0pt, text=color1, font=\scriptsize] at (1.16, 0.13) {#1};%
+    \foreach \i/\o in {1.41/0.5, 1.71/0.3, 2.01/0.15}{%
+        \fill[color1, opacity=\o] (\i, 0.02) rectangle ++(0.24,0.24);%
+      }%
+    \end{tikzpicture}%
+  }%
+  \hspace{\separatorcolumnwidth}%
+  {\subsectionstyle{#2}}%
+  \par\vspace{1.2ex}%
+}
 
 %------------------------------------------------------------%
 % Informations
 \firstname{Mateusz}
-\familyname{Bogdan}
+\familyname{BOGDAN}
 \title{Ph.D, Normalien}              
 \address{98, boulevard Henri Barbusse}{93100 Montreuil, FRANCE}    
 \email{mat.bogdan@pm.me}                      
 \homepage{matbog.github.io}
 \social[linkedin][www.linkedin.com/in/bogdanmateusz/]{bogdanmateusz}
-
+% \social[github]{matbog}
+% \social[gitlab]{matbog}
+%\social[orcid]{0000-0002-3657-6162}
+%\social[googlescholar][scholar.google.fr/citations?user=N0Gr490AAAAJ]{Mateusz Bogdan}
 \mobile{+33 6 47 50 43 55} 
-\extrainfo{French \\ 41 years}
-\photo[85pt][1pt]{ID_BOGDAN.pdf} % [hauteur][epaisseur cadre]
+\extrainfo{French \\ 42 years}
+\photo[90pt][1pt]{ID_BOGDAN.pdf} % [hauteur][epaisseur cadre]
 
 %------------------------------------------------------------%
 \begin{document}
 \maketitle
 
 %------------------------------------------------------------%
-\section{Work Experience}
+\section[\faIcon{briefcase}]{Work Experience}
 
 \cventry{\textit{Since} 2016}{Research Engineer, Project Manager, Team Leader}{\href{https://lhypercube.arep.fr}{AREP - L'hypercube}}{Paris, France}{Leading a team dedicated to urban microclimate, thermal comfort and air quality studies}{}{}
 
 \cventry{\textit{Since} 2018}{Lecturer}{ENS Paris Saclay, ENSAM Paris, INSA Strasbourg}{France}{}{Urban scale climatic studies, Life Cycle Analysis, Numerical Tools for energy analysis (Python)}
 
-\cventry{2012 -- 2015}{Ph.D.}{LMT Cachan - ENS Cachan}{Cachan, France}{CIFRE Grant with AREVA NC}{Under the supervision of L. Stefan and Profs. J.-B. Colliat and F. Benboudjema}{}
+\cventry{2012 -- 2015}{Ph.D.}{LMT Cachan - ENS Cachan - AREVA NC}{Cachan, France}{Morphological multiscale modeling of cementitious materials -- Numerical Homogenization of effective diffusive properties}{Under the supervision of L. Stefan and Profs. J.-B. Colliat and F. Benboudjema}{}
 
 \cventry{2009 -- 2014}{Lecturer and tutoring}{ENS Cachan, ESTP, CNAM, USTH universities}{France \& Vietnam}{}{Applied acoustics, Cementitious Materials, Material Strength, Master's internships supervision}
 
@@ -57,7 +89,7 @@
 \cventry{2008}{Bachelor's Internship}{University of California - EERC}{Berkeley,U.S.A}{Numerical and experimental assessment of a seismic test slab natural frequencies}{Supervised by Prof. B. Stojadinovi\'c}
 
 %------------------------------------------------------------%
-\section{Education}
+\section[\faIcon{graduation-cap}]{Education}
 
 \cventry{2012 -- 2015}{Ph.D.}{LMT Cachan -- ENS Cachan}{France}{\href{https://theses.fr/2015DENS0021}{Morphological multiscale modeling of cementitious materials -- Numerical Homogenization of effective diffusive properties}}{Under the supervision of Profs. J.-B. Colliat and F. Benboudjema}
 
@@ -66,10 +98,14 @@
 \cventry{2006 -- 2008}{Bachelor's degree B.S. \& ``Agrégation''}{ENS Cachan}{France}{Civil and Environmental Engineering}{Specialized in \textsl{Materials, Structure Modeling and Computations}}
 
 %------------------------------------------------------------%
-\section{Selected Publications}
-
+\section[\faIcon{file-lines}]{Selected Publications}
+\cvitem{{\color{color1}Profiles}}{
+  \faIcon{orcid} \href{https://orcid.org/0000-0002-3657-6162}{0000-0002-3657-6162} \quad
+  \faIcon{graduation-cap} \href{https://scholar.google.fr/citations?user=N0Gr490AAAAJ}{Mateusz Bogdan} \quad
+  \faIcon{researchgate} \href{https://www.researchgate.net/profile/Mateusz-Bogdan}{Mateusz-Bogdan}
+}
 %--------------------------------------%
-\subsection{Selected Articles}
+\subsection[\faIcon{newspaper}]{Selected Articles}
 
 \cventry{2025}{Indoor Environments}{Vol. 2}{}{\href{https://doi.org/10.1016/j.indenv.2025.100144}{Comparison of two methods for evaluating the performance of particle filtration systems in underground railway stations}}{V. Rakotonirinjanahary, S. Crumeyrolle, \textsl{M. Bogdan}, B. Hanoune}
 
@@ -88,7 +124,7 @@
 \cventry{2015}{European Journal of Environmental and Civil Engineering}{Vol. 19}{}{\href{http://dx.doi.org/10.1080/19648189.2015.1047899}{Cement Paste Morphologies and effective diffusivity Using the Lattice Boltzmann Method}}{E. Walther, \textsl{M. Bogdan}, C. Desa, R. Bennacer}
 
 %--------------------------------------%
-\subsection{Recent Conferences}
+\subsection[\faIcon{chalkboard-user}]{Recent Conferences}
 
 \cventry{2025}{ICUC12}{Rotterdam, The Netherlands}{\href{https://hal.science/hal-05172092/file/presentation_abricocoda_icuc12_TGresse.pdf}{Approach to Urban Heat Mitigation Through Bio Analogous Climate Shelters}}{T. Gresse, D. David, F. Lefevre, M. Galtier, \textsl{M. Bogdan}, M. Salles, M. Picazo Guerrero, Y. Sun, E. Morlé, K. Lapray}{}
 
@@ -115,18 +151,21 @@
 %\cventry {2011}{COMPLAS XI}{Barcelone}{Spain}{\textcolor{my_pink}{\href{https://www.researchgate.net/publication/256482718_Multi-scale_failure_for_heterogeneous_materials_Link_with_morphological_modeling_-_COMPLAS_XI}{Multi-scale failure for heterogeneous materials: link with morphological modeling}}}{E. Roubin, \textsl{M. Bogdan}, J.-B. Colliat}
 
 %------------------------------------------------------------%
-\section{Skills}
+\section[\faIcon{screwdriver-wrench}]{Skills}
 
 \cvlanguage{Languages}{French \& Polish: First languages, English: Fluent}{}
 
 \cvitem{Programming}{Python, Bash, Web (HTML-CSS, some PHP, some Javascript), some C/C++, some Fortran}{}
-
+\cvitem{Code}{
+  \faIcon{github} \href{https://github.com/matbog}{github.com/matbog} \quad
+  \faIcon{gitlab} \href{https://gitlab.com/matbog}{gitlab.com/matbog}
+}
 \cvitem{Software}{OpenFOAM, ParaView, EnergyPlus, Radiance, Matlab/Scilab, Blender, QGIS, Linux environments}{}
 
 \cvitem{Editon}{Microsoft/Open Office, Adobe Illustrator/Photoshop, Gimp, \LaTeX, Web (Wordpress, HUGO framework)}{}
 
 %------------------------------------------------------------%
-\section{Miscellaneous}
+\section[\faIcon{star}]{Miscellaneous}
 
 \cventry{2006 -- 2007}{Student Union Office}{ENS Cachan}{}{}{Co-Manager of the ``K-fet'' (recreational area - yearly budget 250k\euro)}
 
