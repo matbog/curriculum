@@ -1,5 +1,5 @@
 name: Build CV
- 
+
 on:
   push:
     paths:
@@ -8,25 +8,27 @@ on:
       - 'moderncvcolorpink.sty'
       - 'ID_BOGDAN.pdf'
   workflow_dispatch:
- 
+
 jobs:
   build:
     runs-on: ubuntu-latest
- 
+
     steps:
       - uses: actions/checkout@v4
- 
+
       - name: Compile EN CV
         uses: xu-cheng/latex-action@v3
         with:
           root_file: CV_BOGDAN_EN_short.tex
- 
+          latexmk_use_lualatex: true
+
       - name: Compile FR CV
         uses: xu-cheng/latex-action@v3
         with:
           root_file: CV_BOGDAN_FR_short.tex
-          args: -pdf -jobname=CV_BOGDAN_FR_short -interaction=nonstopmode -halt-on-error
- 
+          latexmk_use_lualatex: true
+          args: -lualatex -jobname=CV_BOGDAN_FR_short -interaction=nonstopmode -halt-on-error
+
       - name: Commit PDFs
         run: |
           git config user.name "github-actions"
@@ -34,4 +36,3 @@ jobs:
           git add CV_BOGDAN_EN_short.pdf CV_BOGDAN_FR_short.pdf
           git diff --staged --quiet || git commit -m "ci: rebuild CV PDFs"
           git push
- 
