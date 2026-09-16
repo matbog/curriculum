@@ -1,27 +1,60 @@
 %------------------------------------------------------------%
 % Classe modercv
-% Reference : http://blog.madrzejewski.com/creer-cv-elegant-latex-moderncv/ 
 %------------------------------------------------------------%
 \documentclass[11pt,a4paper]{moderncv}
-\usepackage[utf8]{inputenc}
 \usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
-\usepackage[T1]{fontenc}
 \usepackage{lmodern}
-% Additional packages
-% Euro symbol
 \usepackage[official]{eurosym}
-% Use more colors
 \usepackage{xcolor}
 \definecolor{my_pink}{HTML}{C4246A}
-
-\PassOptionsToPackage{colorlinks=true, urlcolor=my_pink, linkcolor=my_pink, citecolor=my_pink, breaklinks=true, pdfusetitle, unicode=true}{hyperref}
+\setlength{\fboxsep}{1pt}
+\PassOptionsToPackage{colorlinks=true, urlcolor=my_pink, linkcolor=my_pink, citecolor=my_pink, breaklinks=true, unicode=true}{hyperref}
 
 \moderncvtheme[pink]{classic}
+%------------------------------------------------------------%
+% custom
 \setlength{\hintscolumnwidth}{2.1cm}
+\usepackage{tikz}
+
+\renewcommand*{\section}[2][\faIcon{circle}]{%
+  \vspace{1.5ex}%
+  \par\noindent%
+  \begin{minipage}[t]{\hintscolumnwidth}%
+    \begin{tikzpicture}[baseline=-0.2ex]%
+      \node[inner sep=0pt, text=color1, font=\scriptsize] at (0, 0.12) {#1};%
+          \foreach \i/\o in {0.32/1.0, 0.62/0.75, 0.92/0.5, 1.22/0.3, 1.52/0.15, 1.82/0.07}{%
+          \fill[color1, opacity=\o] (\i, 0) rectangle ++(0.24,0.24);%
+        }%
+    \end{tikzpicture}%
+  \end{minipage}%
+  \hspace{\separatorcolumnwidth}%
+  \begin{minipage}[t]{\maincolumnwidth}%
+    {\sectionstyle{#2}}%
+  \end{minipage}%
+  \par\vspace{0.5ex}%
+}
+
+\renewcommand*{\subsection}[2][\faIcon{chevron-right}]{%
+  \vspace{0.8ex}%
+  \par\noindent%
+  \makebox[\hintscolumnwidth][r]{%
+    \begin{tikzpicture}[baseline=-0.0ex]%
+      \useasboundingbox (0,0) rectangle (2.19cm, 0.26cm);%
+    \node[inner sep=0pt, text=color1, font=\scriptsize] at (1.16, 0.13) {#1};%
+    \foreach \i/\o in {1.41/0.5, 1.71/0.3, 2.01/0.15}{%
+        \fill[color1, opacity=\o] (\i, 0.02) rectangle ++(0.24,0.24);%
+      }%
+    \end{tikzpicture}%
+  }%
+  \hspace{\separatorcolumnwidth}%
+  {\subsectionstyle{#2}}%
+  \par\vspace{1.2ex}%
+}
+
 %------------------------------------------------------------%
 % Informations
 \firstname{Mateusz}
-\familyname{Bogdan}
+\familyname{BOGDAN}
 \title{Docteur, Normalien}
 \address{98, boulevard Henri Barbusse}{93100 Montreuil, FRANCE}
 \email{mat.bogdan@pm.me}
@@ -29,15 +62,15 @@
 \social[linkedin][www.linkedin.com/in/bogdanmateusz/]{bogdanmateusz}
 
 \mobile{+33 6 47 50 43 55}
-\extrainfo{Français \\ 41 ans}
-\photo[80pt][1pt]{ID_BOGDAN.pdf}
+\extrainfo{Français \\ 42 ans}
+\photo[90pt][1pt]{ID_BOGDAN.pdf}
 
 %------------------------------------------------------------%
 \begin{document}
 \maketitle
 
 %------------------------------------------------------------%
-\section{Expérience professionnelle}
+\section[\faIcon{briefcase}]{Expérience professionnelle}
 
 \cventry{\textit{Depuis} 2016}{Ingénieur de Recherche, Chef de Projet, Responsable d'Équipe}{\href{https://lhypercube.arep.fr}{AREP - L'hypercube}}{Paris, France}{Responsable d'une équipe dédiée au microclimat urbain, au confort thermique et à la qualité de l'air}{}{}
 
@@ -53,10 +86,10 @@
 
 \cventry{2009 -- 2010}{Conseiller Scientifique}{Vietnam Green Building Council}{Hanoï, Vietnam}{}{}{}
 
-\cventry{2008}{Stage de Licence}{University of California - EERC}{Berkeley, États-Unis}{Évaluation numérique et expérimentale des fréquences naturelles d'une dalle d'essai sismique}{Sous la direction du Prof. B. Stojadinovi\'c}
+\cventry{2008}{Stage de Licence}{University of California - EERC}{Berkeley, États-Unis}{Évaluation numérique et expérimentale des fréquences naturelles d'une dalle d'essai sismique}{Sous la direction du Prof. B. Stojadinović}
 
 %------------------------------------------------------------%
-\section{Formation}
+\section[\faIcon{graduation-cap}]{Formation}
 
 \cventry{2012 -- 2015}{Doctorat}{LMT Cachan -- ENS Cachan}{France}{\href{https://theses.fr/2015DENS0021}{Modélisation morphologique multi-échelles de matériaux cimentaires - Application à la prédiction de propriétés effectives de diffusion}}{Sous la direction des Profs. J.-B. Colliat et F. Benboudjema}
 
@@ -65,10 +98,15 @@
 \cventry{2006 -- 2008}{Licence \& Agrégation}{ENS Cachan}{France}{Génie Civil et Environnemental}{Spécialité \textsl{Matériaux, Modélisation et Calcul de Structures}}
 
 %------------------------------------------------------------%
-\section{Publications sélectionnées}
+\section[\faIcon{file-lines}]{Publications sélectionnées}
+\cvitem{{\color{color1}Profils}}{
+  \faIcon{orcid} \href{https://orcid.org/0000-0002-3657-6162}{0000-0002-3657-6162} \quad
+  \faIcon{graduation-cap} \href{https://scholar.google.fr/citations?user=N0Gr490AAAAJ}{Mateusz Bogdan} \quad
+  \faIcon{researchgate} \href{https://www.researchgate.net/profile/Mateusz-Bogdan}{Mateusz-Bogdan}
+}
 
 %--------------------------------------%
-\subsection{Articles sélectionnés}
+\subsection[\faIcon{newspaper}]{Articles sélectionnés}
 
 \cventry{2025}{Indoor Environments}{Vol. 2}{}{\href{https://doi.org/10.1016/j.indenv.2025.100144}{Comparison of two methods for evaluating the performance of particle filtration systems in underground railway stations}}{V. Rakotonirinjanahary, S. Crumeyrolle, \textsl{M. Bogdan}, B. Hanoune}
 
@@ -85,7 +123,7 @@
 \cventry{2015}{European Journal of Environmental and Civil Engineering}{Vol. 19}{}{\href{http://dx.doi.org/10.1080/19648189.2015.1047899}{Cement Paste Morphologies and effective diffusivity Using the Lattice Boltzmann Method}}{E. Walther, \textsl{M. Bogdan}, C. Desa, R. Bennacer}
 
 %--------------------------------------%
-\subsection{Conférences récentes}
+\subsection[\faIcon{chalkboard-user}]{Conférences récentes}
 
 \cventry{2025}{ICUC12}{Rotterdam, Pays-Bas}{\href{https://hal.science/hal-05172092/file/presentation_abricocoda_icuc12_TGresse.pdf}{Approach to Urban Heat Mitigation Through Bio ANalogous Climate Shelters}}{T. Gresse, D. David, F. Lefevre, M. Galtier, \textsl{M. Bogdan}, M. Salles, M. Picazo Guerrero, Y. Sun, E. Morlé, K. Lapray}{}
 
@@ -97,21 +135,22 @@
 
 \cventry{2021}{17\textsuperscript{e} conférence internationale IBPSA}{Bruges, Belgique}{\href{https://www.researchgate.net/publication/354362982_Spatial_distribution_of_thermal_comfort_A_case_study_in_Paris'_station}{Spatial distribution of thermal comfort: A case study in Paris' station}}{E. Walther, \textsl{M. Bogdan}, F. Davys-Peyren C. Inard}{}
 
-% \cventry{2019}{16\textsuperscript{e} conférence internationale IBPSA}{Rome, Italie}{Improving the prediction of natural ventilation by coupling CFD and BES: A case study in Strasbourg train station}{E. Walther, A. Hubert, A. Sauvageon, \textsl{M. Bogdan}}{}
-
 %------------------------------------------------------------%
-\section{Compétences}
+\section[\faIcon{screwdriver-wrench}]{Compétences}
 
 \cvlanguage{Langues}{Français \& Polonais : langues maternelles, Anglais : courant}{}
 
 \cvitem{Programmation}{Python, Bash, Web (HTML-CSS, un peu de PHP, un peu de Javascript), un peu de C/C++, un peu de Fortran}{}
-
+\cvitem{Code}{
+  \faIcon{github} \href{https://github.com/matbog}{github.com/matbog} \quad
+  \faIcon{gitlab} \href{https://gitlab.com/matbog}{gitlab.com/matbog}
+}
 \cvitem{Logiciels}{OpenFOAM, ParaView, EnergyPlus, Radiance, Matlab/Scilab, Blender, QGIS, environnements Linux}{}
 
 \cvitem{Édition}{Microsoft/Open Office, Adobe Illustrator/Photoshop, Gimp, \LaTeX, Web (Wordpress, HUGO)}{}
 
 %------------------------------------------------------------%
-\section{Divers}
+\section[\faIcon{star}]{Divers}
 
 \cventry{2006 -- 2007}{Bureau des Élèves}{ENS Cachan}{}{}{Co-gérant de la « K-fet » (espace récréatif -- budget annuel 250k\euro)}
 
